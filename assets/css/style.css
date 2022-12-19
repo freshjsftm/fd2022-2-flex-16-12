@@ -1,5 +1,8 @@
-:root{
-  font-size: 18px;
+:root {
+  --size-avatar: 110px;
+  --bg-color-card: teal;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 * {
   box-sizing: border-box;
@@ -8,33 +11,43 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-.events-list{
-  max-width: 400px;
+img{
+  width: 100%;
+}
+.cards-container {
+  /* якщо картки різні за висотою */
   margin: auto;
 }
-.event{
+.flex-wrapper{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-  padding: 10px;
-  margin: 10px;
-  background-color: pink;
-  
+  justify-content: space-around;
 }
-.event>*{
-  flex-grow: 0.5;
-  padding: 0.5em;
-  /* margin: auto; */
+.user-card {
+  flex: 0 0 calc(4*var(--size-avatar));
+  padding-top: calc(1.5*var(--size-avatar));
+  background-color: var(--bg-color-card);
+  text-align: center;
 }
-.event-name{
-  margin-left: auto;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  /* text-align: center; */
+.user-info {
+  background-color: white;
 }
-.event-date{
-  text-align: right;
+.user-avatar{
+  width: var(--size-avatar);
+  height: var(--size-avatar);
+  margin-top: calc(-0.5*var(--size-avatar));
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+.user-name {
+}
+.user-address {
+}
+.user-header,
+.container-btn {
+  text-transform: capitalize;
+}
+.user-description {
+}
+.social-list {
 }
