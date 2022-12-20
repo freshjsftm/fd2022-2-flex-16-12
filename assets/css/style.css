@@ -1,6 +1,7 @@
 :root {
   --size-avatar: 110px;
   --bg-color-card: teal;
+  --space-size: 10px;
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -14,40 +15,62 @@ a {
 img{
   width: 100%;
 }
-.cards-container {
-  /* якщо картки різні за висотою */
+
+.form{
+  max-width: 400px;
+  width: 95%;
+  min-width: 300px;
+  padding: var(--space-size);
   margin: auto;
+
+  background-color: antiquewhite;
 }
-.flex-wrapper{
+::placeholder{
+  color: #ccc;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+}
+fieldset{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
 }
-.user-card {
-  flex: 0 0 calc(4*var(--size-avatar));
-  padding-top: calc(1.5*var(--size-avatar));
-  background-color: var(--bg-color-card);
-  text-align: center;
+input{
+  border: 4px dotted pink;
 }
-.user-info {
-  background-color: white;
+input:focus{
+  border-color: orange;
+  outline: none;
 }
-.user-avatar{
-  width: var(--size-avatar);
-  height: var(--size-avatar);
-  margin-top: calc(-0.5*var(--size-avatar));
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: top;
+
+/* input::before,
+button::before,
+textarea::before,
+option::before{
+  content:'@@@';
+  background-color: red;
 }
-.user-name {
+*/ 
+input[type="checkbox"]{
+  /* display: none; */
+  /* opacity: 0; */
+  visibility: hidden;
 }
-.user-address {
+input[type="checkbox"]::before{
+  display: inline-block;
+  /* opacity: 1; */
+  visibility: visible;
+  content:'-';
+  /* content:url(./../icons/check-decagram.svg); */
+  width: 0.9rem;
+  height: 0.9rem;
+  transform: translate(-5px, -5px);
 }
-.user-header,
-.container-btn {
+input[type="checkbox"]:checked:before{
+  content:'+';
+  /* content:url(./../icons/check-decagram-outline.svg);   */
+}
+
+
+input[type="submit"]{
   text-transform: capitalize;
-}
-.user-description {
-}
-.social-list {
 }
