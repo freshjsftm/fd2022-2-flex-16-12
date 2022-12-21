@@ -1,8 +1,19 @@
+/*
+(
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+*/
+
 :root {
   --size-avatar: 110px;
   --bg-color-card: teal;
   --space-size: 10px;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Chivo Mono', monospace;
   font-weight: 700;
 }
@@ -16,11 +27,15 @@ a {
 img{
   width: 100%;
 }
-
-h2{
-  text-align: center;
-  text-transform: uppercase;
-}
 p{
-  text-indent: 1rem;
+  text-indent: 2em;
+}
+h2{
+  color: var(--bg-color-card);
+}
+
+@media (min-width: 992px){
+  :root{
+    font-size: 18px;
+  }
 }
