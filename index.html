@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
 
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/custom-grid.css">
+    <link rel="stylesheet" href="./assets/css/custom-grid.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/section.css" />
     <link rel="stylesheet" href="./assets/css/article.css" />
+    <link rel="stylesheet" href="./assets/css/wrapper.css" />
   </head>
   <body>
     <header class="header">
@@ -26,19 +27,35 @@
     <main class="container">
       <h1>title h1</h1>
       <section class="section row">
-        <article class="article col-12 col-md-6">
+        <article class="article col-12">
           <h2>title h2</h2>
-          <picture>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.webp" media="(max-width: 576px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.jpg" media="(max-width: 576px)"/>
-            <source srcset="./assets/images/outdoor-husky-dog.webp" media="(min-width: 992px) and (max-width: 1220px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog.jpg" media="(min-width: 992px) and (min-resolution: 400dpi)"/>
-            <img
-              class="article__img"
-              src="./assets/images/outdoor-husky-dog-w1000.jpg"
-              alt="dog"
-            />
-          </picture>
+          <div class="wrapper">
+            <picture>
+              <source
+                srcset="./assets/images/outdoor-husky-dog-w600.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./assets/images/outdoor-husky-dog-w600.jpg"
+                media="(max-width: 576px)"
+              />
+              <source
+                srcset="./assets/images/outdoor-husky-dog.webp"
+                media="(min-width: 992px) and (max-width: 1220px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./assets/images/outdoor-husky-dog.jpg"
+                media="(min-width: 992px) and (min-resolution: 400dpi)"
+              />
+              <img
+                class="article__img"
+                src="./assets/images/outdoor-husky-dog-w1000.jpg"
+                alt="dog"
+              />
+            </picture>
+          </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
             perspiciatis deserunt aliquid pariatur ipsum! Debitis pariatur et,
@@ -53,10 +70,24 @@
         <article class="article col-12 col-sm-6">
           <h2>title h2</h2>
           <picture>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.webp" media="(max-width: 576px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.jpg" media="(max-width: 576px)"/>
-            <source srcset="./assets/images/outdoor-husky-dog.webp" media="(min-width: 992px) and (max-width: 1220px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog.jpg" media="(min-width: 992px) and (min-resolution: 400dpi)"/>
+            <source
+              srcset="./assets/images/outdoor-husky-dog-w600.webp"
+              media="(max-width: 576px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./assets/images/outdoor-husky-dog-w600.jpg"
+              media="(max-width: 576px)"
+            />
+            <source
+              srcset="./assets/images/outdoor-husky-dog.webp"
+              media="(min-width: 992px) and (max-width: 1220px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./assets/images/outdoor-husky-dog.jpg"
+              media="(min-width: 992px) and (min-resolution: 400dpi)"
+            />
             <img
               class="article__img"
               src="./assets/images/outdoor-husky-dog-w1000.jpg"
@@ -77,10 +108,24 @@
         <article class="article col-12 col-sm-6 col-md-4 hide show-lg">
           <h2>qweert</h2>
           <picture>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.webp" media="(max-width: 576px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.jpg" media="(max-width: 576px)"/>
-            <source srcset="./assets/images/outdoor-husky-dog.webp" media="(min-width: 992px) and (max-width: 1220px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog.jpg" media="(min-width: 992px) and (min-resolution: 400dpi)"/>
+            <source
+              srcset="./assets/images/outdoor-husky-dog-w600.webp"
+              media="(max-width: 576px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./assets/images/outdoor-husky-dog-w600.jpg"
+              media="(max-width: 576px)"
+            />
+            <source
+              srcset="./assets/images/outdoor-husky-dog.webp"
+              media="(min-width: 992px) and (max-width: 1220px)"
+              type="image/webp"
+            />
+            <source
+              srcset="./assets/images/outdoor-husky-dog.jpg"
+              media="(min-width: 992px) and (min-resolution: 400dpi)"
+            />
             <img
               class="article__img"
               src="./assets/images/outdoor-husky-dog-w1000.jpg"
@@ -101,130 +146,24 @@
         <article class="article col-12 col-sm-6 col-md-4">
           <h2>title h2</h2>
           <picture>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.webp" media="(max-width: 576px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.jpg" media="(max-width: 576px)"/>
-            <source srcset="./assets/images/outdoor-husky-dog.webp" media="(min-width: 992px) and (max-width: 1220px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog.jpg" media="(min-width: 992px) and (min-resolution: 400dpi)"/>
-            <img
-              class="article__img"
-              src="./assets/images/outdoor-husky-dog-w1000.jpg"
-              alt="dog"
+            <source
+              srcset="./assets/images/outdoor-husky-dog-w600.webp"
+              media="(max-width: 576px)"
+              type="image/webp"
             />
-          </picture>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            perspiciatis deserunt aliquid pariatur ipsum! Debitis pariatur et,
-            dolore quaerat tenetur nisi ad delectus, eius veritatis unde
-            accusamus obcaecati veniam illum sed aliquid corrupti libero
-            deserunt quod, ea placeat animi vero rem. Odit dolores ullam impedit
-            asperiores nemo, accusantium ut, soluta deserunt adipisci ipsum
-            alias. Culpa tenetur soluta saepe vero quod in, libero voluptate,
-            ducimus quia, atque neque numquam obcaecati eligendi.
-          </p>
-        </article>
-        <article class="article col-12 col-sm-6 col-md-4">
-          <h2>title h2</h2>
-          <picture>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.webp" media="(max-width: 576px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.jpg" media="(max-width: 576px)"/>
-            <source srcset="./assets/images/outdoor-husky-dog.webp" media="(min-width: 992px) and (max-width: 1220px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog.jpg" media="(min-width: 992px) and (min-resolution: 400dpi)"/>
-            <img
-              class="article__img"
-              src="./assets/images/outdoor-husky-dog-w1000.jpg"
-              alt="dog"
+            <source
+              srcset="./assets/images/outdoor-husky-dog-w600.jpg"
+              media="(max-width: 576px)"
             />
-          </picture>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            perspiciatis deserunt aliquid pariatur ipsum! Debitis pariatur et,
-            dolore quaerat tenetur nisi ad delectus, eius veritatis unde
-            accusamus obcaecati veniam illum sed aliquid corrupti libero
-            deserunt quod, ea placeat animi vero rem. Odit dolores ullam impedit
-            asperiores nemo, accusantium ut, soluta deserunt adipisci ipsum
-            alias. Culpa tenetur soluta saepe vero quod in, libero voluptate,
-            ducimus quia, atque neque numquam obcaecati eligendi.
-          </p>
-        </article>
-        <article class="article col-12 col-sm-6 col-md-4">
-          <h2>title h2</h2>
-          <picture>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.webp" media="(max-width: 576px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.jpg" media="(max-width: 576px)"/>
-            <source srcset="./assets/images/outdoor-husky-dog.webp" media="(min-width: 992px) and (max-width: 1220px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog.jpg" media="(min-width: 992px) and (min-resolution: 400dpi)"/>
-            <img
-              class="article__img"
-              src="./assets/images/outdoor-husky-dog-w1000.jpg"
-              alt="dog"
+            <source
+              srcset="./assets/images/outdoor-husky-dog.webp"
+              media="(min-width: 992px) and (max-width: 1220px)"
+              type="image/webp"
             />
-          </picture>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            perspiciatis deserunt aliquid pariatur ipsum! Debitis pariatur et,
-            dolore quaerat tenetur nisi ad delectus, eius veritatis unde
-            accusamus obcaecati veniam illum sed aliquid corrupti libero
-            deserunt quod, ea placeat animi vero rem. Odit dolores ullam impedit
-            asperiores nemo, accusantium ut, soluta deserunt adipisci ipsum
-            alias. Culpa tenetur soluta saepe vero quod in, libero voluptate,
-            ducimus quia, atque neque numquam obcaecati eligendi.
-          </p>
-        </article>
-        <article class="article col-12 col-sm-6 col-md-4">
-          <h2>title h2</h2>
-          <picture>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.webp" media="(max-width: 576px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.jpg" media="(max-width: 576px)"/>
-            <source srcset="./assets/images/outdoor-husky-dog.webp" media="(min-width: 992px) and (max-width: 1220px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog.jpg" media="(min-width: 992px) and (min-resolution: 400dpi)"/>
-            <img
-              class="article__img"
-              src="./assets/images/outdoor-husky-dog-w1000.jpg"
-              alt="dog"
+            <source
+              srcset="./assets/images/outdoor-husky-dog.jpg"
+              media="(min-width: 992px) and (min-resolution: 400dpi)"
             />
-          </picture>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            perspiciatis deserunt aliquid pariatur ipsum! Debitis pariatur et,
-            dolore quaerat tenetur nisi ad delectus, eius veritatis unde
-            accusamus obcaecati veniam illum sed aliquid corrupti libero
-            deserunt quod, ea placeat animi vero rem. Odit dolores ullam impedit
-            asperiores nemo, accusantium ut, soluta deserunt adipisci ipsum
-            alias. Culpa tenetur soluta saepe vero quod in, libero voluptate,
-            ducimus quia, atque neque numquam obcaecati eligendi.
-          </p>
-        </article>
-        <article class="article col-12 col-sm-6 col-md-4">
-          <h2>title h2</h2>
-          <picture>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.webp" media="(max-width: 576px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.jpg" media="(max-width: 576px)"/>
-            <source srcset="./assets/images/outdoor-husky-dog.webp" media="(min-width: 992px) and (max-width: 1220px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog.jpg" media="(min-width: 992px) and (min-resolution: 400dpi)"/>
-            <img
-              class="article__img"
-              src="./assets/images/outdoor-husky-dog-w1000.jpg"
-              alt="dog"
-            />
-          </picture>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-            perspiciatis deserunt aliquid pariatur ipsum! Debitis pariatur et,
-            dolore quaerat tenetur nisi ad delectus, eius veritatis unde
-            accusamus obcaecati veniam illum sed aliquid corrupti libero
-            deserunt quod, ea placeat animi vero rem. Odit dolores ullam impedit
-            asperiores nemo, accusantium ut, soluta deserunt adipisci ipsum
-            alias. Culpa tenetur soluta saepe vero quod in, libero voluptate,
-            ducimus quia, atque neque numquam obcaecati eligendi.
-          </p>
-        </article>
-        <article class="article col-12 col-sm-6 col-md-4">
-          <h2>title h2</h2>
-          <picture>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.webp" media="(max-width: 576px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog-w600.jpg" media="(max-width: 576px)"/>
-            <source srcset="./assets/images/outdoor-husky-dog.webp" media="(min-width: 992px) and (max-width: 1220px)" type="image/webp"/>
-            <source srcset="./assets/images/outdoor-husky-dog.jpg" media="(min-width: 992px) and (min-resolution: 400dpi)"/>
             <img
               class="article__img"
               src="./assets/images/outdoor-husky-dog-w1000.jpg"
