@@ -1,16 +1,6 @@
 .article{
-  /* max-width: 400px; */
-  width: 100%;
-  /* min-width: 320px; */
-
-  border: 2px solid red;
-
-  padding: 0.7rem;
-  margin: 0.7rem;
+  border: 2px solid teal;
 
   text-align: center;
 }
-.youtube{
-  width : 800px;
-  height : 500px;
-}
+

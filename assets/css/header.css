@@ -29,7 +29,6 @@
   font-size: 2rem;
 }
 .reclama{
-  display: none;
   height: calc(var(--height) - 20) ;
   width: calc(var(--height)/13*8);
 }
@@ -45,7 +44,6 @@
     background-color: olive;
   }
   .reclama{
-    display: inline-block;
     background-image: url(./../images/Cat_November_2010-w600.jpg);
     background-size: cover;
   }
