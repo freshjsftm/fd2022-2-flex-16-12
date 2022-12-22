@@ -46,7 +46,12 @@
   }
   .reclama{
     display: inline-block;
-    background-image: url(./../images/Cat_November_2010-1a.jpg);
+    background-image: url(./../images/Cat_November_2010-w600.jpg);
     background-size: cover;
+  }
+}
+@media (min-width:1440px) and (min-resolution: 400dpi){
+  .reclama{
+    background-image: url(./../images/Cat_November_2010-1a.jpg);
   }
 }
